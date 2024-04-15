@@ -3,6 +3,7 @@ import FormComplexos from "./components/FormComplexos";
 import FormIdade from "./components/FormIdade";
 import FormSimples from "./components/FormSimples";
 import FormLogin from "./components/FormLogin";
+import MusicsList from "./components/MusicsList";
 
 function App() {
    return (
@@ -50,7 +51,9 @@ function App() {
             {/* INVOCAR AQUI O COMPONENTE DO EXERCÍCIO FORM LOGIN */}
          </div>
 
-         <div id="EXERCÍCIO 3 COLOCAR DENTRO DESSA DIV"></div>
+         <div id="EXERCÍCIO 3 COLOCAR DENTRO DESSA DIV">
+            <MusicsList />
+         </div>
       </>
    );
 }

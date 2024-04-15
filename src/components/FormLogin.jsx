@@ -24,9 +24,9 @@ export default function FormLogin(){
         <div>
             <form action="post">
             <label htmlFor="email">email: </label>
-            <input type="email" name="email" onChange={handleChange}/>
+            <input type="email" name="email" value={form.email} onChange={handleChange}/>
             <label htmlFor="password">Senha</label>
-            <input type="text" name="password" onChange={handleChange}/>
+            <input type="text" name="password" value={form.password} onChange={handleChange}/>
             <button onClick={handleSubmit}>Salvar</button>
 
             </form>
