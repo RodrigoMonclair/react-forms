@@ -1,6 +1,8 @@
 import "./App.css";
 import FormComplexos from "./components/FormComplexos";
+import FormIdade from "./components/FormIdade";
 import FormSimples from "./components/FormSimples";
+import FormLogin from "./components/FormLogin";
 
 function App() {
    return (
@@ -9,17 +11,17 @@ function App() {
             <h1>Form Simples</h1>
             <p>
                São formulários que cuidam apenas de um campo de input. Nesse
-               exemplo abaixo, o componente FormSimples tem apenas um campo
-               "Nome".
+               {/* exemplo abaixo, o componente FormSimples tem apenas um campo "Nome". */}
             </p>
             <p>
                nota: como o state é referente a apenas um input, não tem
                necessidade de guardar ele dentro de um objeto.
             </p>
 
-            <code>const [nome, setNome] = useState("");</code>
+            {/* <code>const [nome, setNome] = useState("");</code> */}
 
             <FormSimples />
+            <FormIdade />
             {/* INVOCAR AQUI O COMPONENTE DO EXERCÍCIO FORM IDADE */}
          </div>
 
@@ -39,11 +41,12 @@ function App() {
                São formulários que possuem vários inputs atribuidos a um mesmo
                state. É criado um objeto onde cada propriedade é resposável por
                guardar o valor de um input. No exemplo abaixo, o componente
-               FormComplexo tem dois campos "Nome" e "Idade".
+               {/* FormComplexo tem dois campos "Nome" e "Idade". */}
             </p>
             <small>Olhe seu console enquanto digita</small>
 
             <FormComplexos />
+            <FormLogin />
             {/* INVOCAR AQUI O COMPONENTE DO EXERCÍCIO FORM LOGIN */}
          </div>
 
